@@ -1,0 +1,14 @@
+.site-main{
+    flex-grow: 1;
+}
+@include breakpoint-down(500px){
+.site-main{
+    position: relative;
+    top: 160px;
+}
+}
+@include breakpoint-down(375px){
+    .site-main{
+        top: 136px;
+    } 
+}

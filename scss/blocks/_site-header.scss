@@ -1,0 +1,75 @@
+.site-header {
+    background-color: $midnight-green-color;
+    z-index: 1;
+}
+.site-header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.site-header__logo {
+    margin-right: 80px;
+}
+.site-header__menu-toggler{
+    padding: 5px;
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    display: none;
+    z-index: 99;
+    border: none;
+    width: 20px;
+    height: 17px;
+    background-color: transparent;
+    background-image: url(../../images/toggler-img.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px 17px;
+}
+.site-header__open .site-header__menu-toggler{
+    background-image: url(../../images/toggler-img-open.svg);
+    background-size: 18px 17px;
+    width: 18px;
+    height: 17px;
+}
+.site-header__sitenav {
+    flex-grow: 1;
+}
+@include breakpoint-down(700px){
+    .site-header__container{
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+@include breakpoint-down(500px){
+    .site-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .site-header__open .site-header__sitenav{
+        display: flex;
+    }
+    .site-header__menu-toggler{
+        display: block;
+        top:70px;
+    }
+    .site-header__container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@include breakpoint-down(375px){
+    .site-header__container{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .site-header__menu-toggler{
+        display: block;
+        top:60px;
+    }
+}
+

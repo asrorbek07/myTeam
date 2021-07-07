@@ -1,0 +1,40 @@
+.site-footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+.site-footer-left {
+}
+.site-footer-left__wrap {
+}
+.site-footer__menu {
+}
+.site-footer__link {
+}
+.site-footer__address {
+}
+.site-footer__right {
+}
+.site-footer__social {
+}
+.site-footer__social-item {
+}
+.site-footer__social-link {
+}
+.site-footer__social__img {
+}
+.site-footer__about {
+}
+
+
+
+@include breakpoint-down(500px){
+    .site-footer{
+        position: relative;
+        top: 160px;
+    }
+    }
+    @include breakpoint-down(375px){
+        .site-footer{
+            top: 136px;
+        } 
+    }

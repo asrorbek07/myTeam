@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,74 @@
     <title>myTeam</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header class="site-header">
-        
+        <div class="container site-header__container">
+            <a class="logo site-header__logo" href="index.html">
+                <img class="logo__img" src="images/myteam-logo.svg" alt="logo img" width="160" height="40">
+            </a>
+            <button class="site-header__menu-toggler"></button>
+            <nav class="sitenav site-header__sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">home</a></li>
+                    <li class="sitenav__item"><a class="sitenav__link" href="#">about</a></li>
+                </ul>
+                <a class="sitenav__btn btn" href="#">contact us</a>
+            </nav>
+        </div>
     </header>
-    
-    <script src="js/main.js"></script>
+    <main class="site-main">
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__container">
+            <div class="site-footer-left">
+                <div class="site-footer-left__wrap">
+                    <a class="logo" href="index.html"><img class="logo__img" src="images/logo-img-footer.svg"
+                            alt="logo img" width="96" height="24"></a>
+                    <div class="site-footer__menu">
+                        <a class="site-footer__link" href="#">home</a>
+                        <a class="site-footer__link" href="#">about</a>
+                    </div>
+                </div>
+                <address class="site-footer__address" >
+                    <pre >
+                        987  Hillcrest Lane
+                        Irvine, CA
+                        California 92714
+                        Call Us : 949-833-7432
+                    </pre>
+                </address>
+            </div>
+            <div class="site-footer__right">
+                <ul class="site-footer__social">
+                    <li class="site-footer__social-item">
+                        <a class="site-footer__social-link" href="https://www.facebook.com/facebook/">
+                            <img class="site-footer__social__img" src="images/facebook-icon.svg" alt="social -img" width="24" height="24">
+                        </a>
+                    </li>
+                    <li class="site-footer__social-item">
+                        <a class="site-footer__social-link" href="https://www.pinterest.com/">
+                            <img class="site-footer__social__img" src="images/pinterest-icon.svg" alt="social -img" width="24" height="24">
+                        </a>
+                    </li>
+                    <li class="site-footer__social-item">
+                        <a class="site-footer__social-link" href="https://twitter.com/">
+                            <img class="site-footer__social__img" src="images/twitter-icon.svg" alt="social -img" width="24" height="20">
+                        </a>
+                    </li>
+                </ul>
+                <p class="site-footer__about">
+                    Copyright 2020. All Rights Reserved
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
