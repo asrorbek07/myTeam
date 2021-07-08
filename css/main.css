@@ -732,6 +732,153 @@ img {
   }
 }
 
+.our {
+  background-color: transparent;
+  background-image: url(../../images/our-bg-top.svg), url(../../images/our-bg-bottom.svg);
+  background-position: calc(50% - 650px) top, calc(50% + 620px) calc(100% + 100px);
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 200px;
+}
+
+.our__container {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.our__title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 56px;
+  max-width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.our__title span {
+  color: #79C8C7;
+}
+
+.our__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.our__item {
+  background-image: url(../../images/double-quotes.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 67px 56px;
+  padding-top: 36px;
+  padding-bottom: 11px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.our__about {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.our__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.our__position {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 32px;
+}
+
+.our__img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1260px) {
+  .our {
+    background-position: left top, right calc(100% + 100px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .our__title {
+    margin-bottom: 48px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .our__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our__item {
+    width: 100%;
+  }
+  .our__item:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+  .our__about {
+    margin-bottom: 16px;
+  }
+  .our__position {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .our__container {
+    padding-top: 140px;
+    padding-bottom: 164px;
+  }
+}
+
 .ready {
   background-color: #F67E7E;
   background-image: url(../../images/ready-bg-img.svg);
