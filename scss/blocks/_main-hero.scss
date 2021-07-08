@@ -1,4 +1,5 @@
 .main-hero {
+    background-color: $midnight-green-color;
     background-image: url(../../images/site-hero-bg-left.svg),
                       url(../../images/main-hero__bg-img.svg);
     background-position: calc(50% - 720px) 55px,
@@ -72,6 +73,9 @@
     .main-hero__title{
         font-size: 64px;
         line-height: 56px;        
+    }
+    .main-hero__about{
+        width: auto;
     }
 }
 @include breakpoint-down(375px){
