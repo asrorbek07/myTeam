@@ -1,0 +1,77 @@
+.clients {
+    background-color: $sacramento-state-green-color;
+    background-image: url(../../images/clients-bg.svg);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 620px) 0;
+}
+.clients__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.clients__title {
+    @include mar-pad;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+}
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    @include list-unstyled;
+    align-items: center;
+}
+.clients__item {
+    margin-right: 40px;
+}
+.clients__link {
+    display: block;
+}
+.clients__img {
+    display: block;
+    background-color: transparent;
+    color: $white-color;
+}
+@include breakpoint-down(1260px){
+    .clients{
+        background-position: 0 0;
+    }
+}
+@include breakpoint-down(766px){
+    .clients{
+        background-position: -100px 0;
+    }
+    .clients__container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .clients__title{
+        font-size: 32px;
+        line-height: 32px;        
+    }
+    .clients__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clients__item{
+        margin-bottom: 30px;
+    }
+}
+@include breakpoint-down(375px){
+    .clients{
+        background-position: -100x -100px;
+    }
+    .clients__container{
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    .clients__list{
+        align-items: center;
+    }
+    .clients__item{
+        margin-right: 0;
+    }
+}
