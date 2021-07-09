@@ -32,6 +32,9 @@
     font-size: 18px;
     line-height: 28px;        
 }
+.site-footer__link:hover{
+    color: $light-coral-color;
+}
 .site-footer__link:first-of-type{
     margin-right: 40px;
 }
@@ -62,8 +65,11 @@
 .site-footer__social-link {
     display: block;
 }
-.site-footer__social__img {
+.site-footer__social-img {
     display: block;
+}
+.site-footer__social-link:hover svg path{
+    fill: $light-coral-color
 }
 .site-footer__about {
     @include mar-pad;

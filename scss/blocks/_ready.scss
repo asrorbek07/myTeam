@@ -27,7 +27,12 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: $sacramento-state-green-color;    
+    color: $sacramento-state-green-color;   
+    text-decoration: none; 
+}
+.ready__btn:hover{
+    background-color: $sacramento-state-green-color;
+    color: $white-color;
 }
 @include breakpoint-down(1260px){
     .ready {
