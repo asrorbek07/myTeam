@@ -1,0 +1,165 @@
+.meet {
+    background-image: url(../../images/meet-bg-top.svg),
+                      url(../../images/meet-bg-bottom.svg);
+    background-size: 200px 200px,
+                     147px 100px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 720px) 0,
+                         calc(50% + 650px) 100%;
+}
+.meet__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.meet__title{
+    @include mar-pad;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 16px;    
+    text-align: center;
+}
+.meet__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include list-unstyled;
+    margin-right: -30px;
+}
+.meet__item {
+    width: 350px;
+    background-color: $sacramento-state-green-color;
+    margin-top: 48px;
+    margin-bottom: 28px;
+    margin-right: 30px;
+}
+.meet__wrap-close, .meet__wrap {
+    display: block;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+.meet__img {
+    display: block;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meet__wrap-close{
+    display: none;
+}
+.meet__wrap-close .meet__person{
+    margin-bottom: 8px;
+}
+.meet__person {
+    @include mar-pad;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: $rapture-blue-color;    
+}
+.meet__position {
+    display: block;
+    @include mar-pad;
+    font-style: italic;
+    font-weight: 500;  
+    text-align: center;  
+}
+.meet__text {
+    @include mar-pad;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 24px;
+}
+.meet__social {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+}
+.meet__social-link {
+    display: block;
+}
+.meet__social-link:hover svg path{
+    fill: $light-coral-color;
+}
+.meet__social-link:first-of-type{
+    margin-right: 16px;
+}
+.meet__btn {
+    display: block;
+    position: relative;
+    top: 28px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: $light-coral-color;
+    background-image: url(../../images/meet-item-btn-img.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meet__open-toggler .meet__btn{
+    transform: rotate(45deg);
+    background-color: $rapture-blue-color;
+}
+.meet__open-toggler .meet__wrap{
+    display: none;
+}
+.meet__open-toggler .meet__wrap-close{
+    display: block;
+}
+@include breakpoint-down(1260px){
+    .meet {
+        background-position: 0 0,
+                             calc(100%) 100%;
+    }
+}
+@include breakpoint-down(800px){
+    .meet__title{
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 32px;        
+    }
+  .meet__item{
+      width: 280px;
+      margin-right: 10px;
+  }
+  .meet__text{
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+@include breakpoint-down(600px){
+    .meet__title{
+        margin-bottom: 24px;
+    }
+    .meet__list{
+        margin-right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .meet__item{
+        margin-top: 36px;
+        margin-right: 0;
+    }
+}
+@include breakpoint-down(375px){
+    .meet__item{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .meet__wrap-close, .meet__wrap{
+        margin-left: 4;
+        margin-right: 4;
+    }
+}
